@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/services.html">Creativity</li></a>
+                    <li><a href="/music.html">Music</li></a>
+                    <li><a href="/game.html">GAMES</li></a>
+                    <li><a href="/cart.html">Shopping</a></li>
+                    <li><a href="/contact.html">Contact Us</li></a>
+                </ul>
+                <div class="socialmedia">
+                    <div class="simg">
+                        <a href=""><img src="socialmf.png" alt="" height="20px" width="20"></a>
+                        <a href=""> <img src="socialmi.png" alt="" height="20px" width="20"></a>
+                        <a href=""> <img src="socialmt.png" alt="" height="20px" width="20"></a>
+                        <a href=""> <img src="socialml.png" alt="" height="20px" width="20"></a>
+                    </div>
+                    <div class="ins">
+                        <p style="font-size:9px;">saching852002@gmail.com</p>
+                        <p style="font-size:15px;">&copy; ProfeSSionalZ</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="open" src="align-justify.png" alt="" width="23">
+                <img class="cross" src="close_image.webp" alt="" width="23">
+            </div>
+        </div>
+        <div class="maint">
+            <h1 class="heading" style="text-align: left; color: red;">ProfeS<span style="color: white"">SionalZ</span> </h1>
+            <div class=" myntra">
+                    <div id="quotes"></div>
+                    <div id="author"></div>
+
+                    <script>
+                        const quotes = document.getElementById("quotes");
+                        const author = document.getElementById("author");
+                        let realdata = "";
+                        const getnewquotes = () => {
+                            let rnum = Math.floor(Math.random() * 10);
+                            quotes.innerText = `${realdata[rnum].text}`;
+                            author.innerText = `${realdata[rnum].author}`;
+                        };
+                        const getQuotes = async () => {
+                            const api = "https://type.fit/api/quotes";
+                            try {
+                                let data = await fetch(api);
+                                realdata = await data.json();
+                                getnewquotes();
+                            } catch (error) { }
+                        };
+                        getQuotes();
+                    </script>
+        </div>
+
+
+        <div class="infocontainer">
+            <div class="devinfo">
+                <div class="hello">Hi,We are</div>
+                <div class="name">ProfeSSionalZ </div>
+                <div class="about"> & We are Developer </div>
+                <div class="moreabout">from Chandigarh University.</div>
+                <div class="btn">
+                    <a href="/services.html"><button>Our Services</button></a>
+                    <a href="/contact.html"><button>Contact Us</button></a>
+                </div>
+            </div>
+            <div class="devpic"><img
+                    src="purepng.com-thinking-manthinking-manpersongentle-men-thinkingthinking-brainthinking-people-1421526976846f4jys.png"
+                    alt="hero">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

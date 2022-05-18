@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white;
+   
+}
+
+.heading{
+    color:black;
+    font-size: 50px;
+}
+.sidebar {
+    background-color: white;
+    width: 16.8vw;
+    font-family: 'Capriola', sans-serif;
+    height: 100vh;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 45px;
+    font-size: 35px;
+    transition: transform 0.2ss ease-in;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 18px 0px;
+    font-size: medium;
+
+}
+
+.sidebar nav li a {
+    color: #0f0f04 ;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar nav li a:hover{
+    color: rebeccapurple ;
+    font-weight: bolder;
+    font-size: 20px;
+   
+}
+
+.maint {
+    background-color: black;
+    /* background-image: url("home.avif"); */
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer{
+    /* background-color: rgb(0, 255, 153); */
+    height: 50vh;
+    width: 80vw;
+    margin: 10px 0 0px 160px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.heading{
+    text-align: center;
+    margin: 40px 60px 0 90px;
+}
+.devpic img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 60px;
+    border-radius: 100px;
+    /* bottom: 5px; */
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.hello{
+ font-size: 50px;
+}
+.name{
+ font-size: 45px;
+ font-family: 'Capriola', sans-serif;
+ font-weight: bold;
+ color: red;
+}
+.about{
+font-size: 28px;
+color: blueviolet;
+animation-name: example;
+animation-duration: 4s;
+}
+
+.moreabout{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.btn{
+    display: inline-block;
+    font-family: 'Capriola', sans-serif;
+    margin-top: 7px;
+}
+.btn button{
+ width: 120px;
+ border-radius: 25px;
+ border: black solid 1px ;
+ padding: 10px;
+ font-weight: 400;
+ margin: 0 5px;
+ cursor: pointer;
+ background-color: white;
+ color:black;
+}
+
+.socialmedia{
+    margin: 25px 0 0px;
+}
+
+
+
+.ins{
+    margin: 13px 0px 0px 0px;
+}
+.btn button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s; }
+
+.myntra{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+@keyframes example {
+    from {color: blueviolet;}
+    to {color: greenyellow;}
+  }
+
+
+                              /*CONTACT ME*/
+
+.contactform{
+    font-family: 'Capriola', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    padding-left: 150px;
+    background-color: white;
+    width: 100vw;
+    background-image: url("jeremy-bezanger-EisZddhzxUw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.contactform h1{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.contactform div{
+    padding: 11px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform label{
+    font-weight: 300;
+}
+
+.contactform div input{
+    width: 26vw;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 6px 0 0;
+    padding: 3px;
+    font-family: 'Capriola', sans-serif;
+    
+
+}
+
+#emailHelp{
+    font-size: 10px;
+    color: blue;
+    margin: 0px 5px;
+}
+.mb-3 textarea{
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 350px;
+}
+#form-check {
+ flex-direction: row;
+}
+#form-check input{
+ width: 24px;
+ margin: 3px 0px;
+ border-radius: 13px;
+}
+
+.btn-smt button{
+    width: 120px;
+    border-radius: 25px;
+    border: black solid 1px ;
+    padding: 10px;
+    font-weight: 600;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+   }
+ .btn-smt button:hover{
+       color: white;
+       background-color: black;
+       transition: 0.9s;
+   }
+ .qrinfo{
+     position: relative;
+     bottom: 450px;
+     left: 400px;
+ }
+
+ .map{
+    position: relative;
+    bottom: 820px;
+    left: 700px;
+    /* border: solid yellow 2px;
+    border-radius: 8px; */
+ }
+
+ .mapinfo{
+     border-radius: 7px;
+ }
+
+                          /* bjfehfckel */
+
+.sidebarGo{
+    transform: translate(-213px, 0px);
+    position: absolute;
+} 
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
+}
+
+/* music */
+
+.musiccontainer{
+    height: 100vh;
+    width: 70vw;
+    background-color: aqua;
+    margin-right: 130px;
+}
+.cross{
+    margin-left: 175px;
+    margin-top: 10px;
+}
+.open{
+    margin-top: 10px;
+    background-color: white;
+}
+
+  @media (max-width: 915px) {
+     *{
+        /* background-color: rgb(183, 153, 153); */
+    } 
+     /* .sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute; */
+        .devpic{
+            display: none;
+        }
+  } 
+ 
+
